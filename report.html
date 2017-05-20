@@ -11809,7 +11809,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11866,7 +11866,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -12008,7 +12008,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12154,7 +12154,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Make a copy of the DataFrame, using the &#39;drop&#39; function to drop the given feature</span>
@@ -12233,7 +12233,7 @@ I would like to predict H0: There is correlation between feature "Milk" &amp; ot
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14066,7 +14066,7 @@ There is degree of correlation between Gorcery &amp; Detergents_Paper according 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -18173,7 +18173,7 @@ mX9ycZaHgI0AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -18279,7 +18279,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">outliers_entry</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -18314,6 +18314,8 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 
 <span class="n">outliers</span> <span class="o">=</span> <span class="n">outliers_entry</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span>
+
+<span class="k">print</span> <span class="n">outliers</span>
 <span class="c1"># OPTIONAL: Select the indices for data points you wish to remove</span>
     
 <span class="c1"># Remove the outliers, if any were specified</span>
@@ -18933,6 +18935,18 @@ The reason for considering this as outliers are becuase -
 
 </div>
 
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[ 53  81  95 159 170 171 173 174 193 218 266 272 299 304 305 327 340 342
+ 353 355 392  86 269 131 275  16  38  57  59  60  93 103 106 138 144 145
+ 175 196 221 264 325 379 403 413 418 420 429 204 402  25  42  43  44  71
+  87  88 109 137 142 187 190 203 233 270 285 303 318 343 375]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -18958,6 +18972,11 @@ In this example, I removed data which has only 1 features are outliers due to re
 <li>Data with only 1 feature as outliers maybe having some wrong input values</li>
 <li>Data with &gt; 2 feature as outliers actually provides insight of outside the normal zone, which helps us increase the accurancy to predict Testset in outline zone </li>
 </ul>
+<p>Index of removed Outliers: &lt;/br&gt;</p>
+<p>53  81  95 159 170 171 173 174 193 218 266 272 299 304 305 327 340 342
+ 353 355 392  86 269 131 275  16  38  57  59  60  93 103 106 138 144 145
+ 175 196 221 264 325 379 403 413 418 420 429 204 402  25  42  43  44  71
+  87  88 109 137 142 187 190 203 233 270 285 303 318 343 375</p>
 
 </div>
 </div>
@@ -18989,7 +19008,7 @@ In this example, I removed data which has only 1 features are outliers due to re
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with the same number of dimensions as features</span>
@@ -19365,7 +19384,7 @@ AQAADAhMAAAAAwITAADAwP8Bl2/4EaKjx4UAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -19468,7 +19487,7 @@ AQAADAhMAAAAAwITAADAwP8Bl2/4EaKjx4UAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
@@ -19476,6 +19495,7 @@ AQAADAhMAAAAAwITAADAwP8Bl2/4EaKjx4UAAAAASUVORK5CYII=
 
 <span class="c1"># TODO: Transform the good data using the PCA fit above</span>
 <span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">good_data</span><span class="p">)</span>
+<span class="n">reduced_data</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">good_data</span><span class="p">)</span>
 
 <span class="c1"># TODO: Transform log_samples using the PCA fit above</span>
 <span class="n">pca_samples</span> <span class="o">=</span> <span class="n">log_samples</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -19505,7 +19525,7 @@ AQAADAhMAAAAAwITAADAwP8Bl2/4EaKjx4UAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -19590,7 +19610,7 @@ AQAADAhMAAAAAwITAADAwP8Bl2/4EaKjx4UAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -19606,12 +19626,12 @@ AQAADAhMAAAAAwITAADAwP8Bl2/4EaKjx4UAAAAASUVORK5CYII=
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[32]:</div>
+<div class="prompt output_prompt">Out[14]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x116aea5d0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x112818f50&gt;</pre>
 </div>
 
 </div>
@@ -20673,7 +20693,7 @@ Advantage of Gaussian Mixture Model:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.mixture</span> <span class="kn">import</span> <span class="n">GaussianMixture</span>
@@ -20809,7 +20829,7 @@ silhouette_score = 0.285894223992
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
@@ -21420,7 +21440,7 @@ AgAAAFA5BEIAAAAAKodACAAAAEDlEAgBAAAAqJz/Dwl/0P8wYfdMAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
@@ -21434,6 +21454,14 @@ AgAAAFA5BEIAAAAAKodACAAAAEDlEAgBAAAAqJz/Dwl/0P8wYfdMAAAAAElFTkSuQmCC
 <span class="n">true_centers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">true_centers</span><span class="p">),</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 <span class="n">true_centers</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">segments</span>
 <span class="n">display</span><span class="p">(</span><span class="n">true_centers</span><span class="p">)</span>
+
+<span class="n">original_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">outliers</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s2">&quot;Centers offset from median&quot;</span>
+<span class="n">display</span><span class="p">(</span><span class="n">true_centers</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">original_data</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
+
+<span class="k">print</span> <span class="s2">&quot;Centers offset from mean&quot;</span>
+<span class="n">display</span><span class="p">(</span><span class="n">true_centers</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">original_data</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -21501,6 +21529,138 @@ AgAAAFA5BEIAAAAAKodACAAAAEDlEAgBAAAAqJz/Dwl/0P8wYfdMAAAAAElFTkSuQmCC
 
 </div>
 
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Centers offset from median
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Segment 0</th>
+      <td>-705.0</td>
+      <td>-70.0</td>
+      <td>39.0</td>
+      <td>152.0</td>
+      <td>28.0</td>
+      <td>-28.0</td>
+    </tr>
+    <tr>
+      <th>Segment 1</th>
+      <td>-7054.0</td>
+      <td>-411.0</td>
+      <td>806.0</td>
+      <td>-1076.0</td>
+      <td>545.0</td>
+      <td>-582.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Centers offset from mean
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Segment 0</th>
+      <td>-4167.0</td>
+      <td>-2328.0</td>
+      <td>-3256.0</td>
+      <td>-1118.0</td>
+      <td>-1910.0</td>
+      <td>-565.0</td>
+    </tr>
+    <tr>
+      <th>Segment 1</th>
+      <td>-10516.0</td>
+      <td>-2669.0</td>
+      <td>-2489.0</td>
+      <td>-2346.0</td>
+      <td>-1393.0</td>
+      <td>-1119.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -21522,8 +21682,8 @@ AgAAAFA5BEIAAAAAKodACAAAAEDlEAgBAAAAqJz/Dwl/0P8wYfdMAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-Cluster 0 - extremely high consumption on Fresh comparing other products 
-Cluster 1 - comparative normal consumption on Fresh comparing to other products</p>
+Cluster 0 - Comparative high consumption on Fresh &amp; Frozen comparing to Cluster 1. It means Cluster 0 relatively has higher "dimension 2" features comparing to Cluster 0. I will propose Cluster 0 represents restaurant / supermarket which needs lots of Fresh / Frozen for food preparation.</p>
+<p>Cluster 1 - Comparative low consumption on Fresh &amp; Frozen comparing to Cluster 0. It means Cluster 1 relatively has higher "dimension 1" feature. I will propse Cluster 1 represents grocery store / cafe which doesn't need much Fresh &amp; Frozen during purchasing</p>
 
 </div>
 </div>
@@ -21541,7 +21701,7 @@ Cluster 1 - comparative normal consumption on Fresh comparing to other products<
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">samples</span><span class="p">)</span>
